@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_marginEnd="10dp"
+    android:minWidth="160dp"
+    android:background="@android:color/darker_gray">
+
+    <TextView
+        android:id="@+id/tvExerciseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Box Breathing"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tvExerciseDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60s"
+        android:textSize="13sp"
+        android:paddingTop="4dp"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

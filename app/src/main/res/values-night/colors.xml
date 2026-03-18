@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_700">#018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="SoftBlue">#4A90E2</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="my_dark_primary">#121212</color>
+    <color name="my_light_primary">#6200EE</color> <!-- Dark gray/black -->
+    <color name="home_background">#000000</color>
+
+    <!-- Primary Colors -->
+    <color name="primaryText">#1A1A1A</color> <!-- Dark text for light mode -->
+    <color name="secondaryText">#4F4F4F</color>
+    <color name="background">#F2F6F9</color> <!-- Light, calming background -->
+    <color name="card">#FFFFFF</color> <!-- Card backgrounds in light mode -->
+
+    <!-- Button Colors -->
+    <color name="buttonStart">#4CAF50</color> <!-- Calming green -->
+    <color name="buttonStop">#F44336</color> <!-- Gentle red -->
+    <color name="buttonText">#FFFFFF</color> <!-- Text for buttons -->
+
+    <!-- Spinner & Switch -->
+    <color name="spinnerBackground">#E0F2F1</color> <!-- Mint/teal background -->
+    <color name="switchThumb">#80CBC4</color>
+    <color name="switchTrack">#B2DFDB</color>
+
+    <!-- Status Colors -->
+    <color name="statusActive">#388E3C</color>
+    <color name="statusInactive">#BDBDBD</color>
+
+    <!-- Dark Mode Overrides -->
+    <color name="dark_primaryText">#FFFFFF</color>
+    <color name="dark_background">#121212</color>
+    <color name="dark_card">#1E1E1E</color>
+    <color name="dark_spinnerBackground">#263238</color>
+</resources>

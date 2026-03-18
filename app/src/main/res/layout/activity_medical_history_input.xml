@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Spinner
+        android:id="@+id/spinnerHistoryType"
+        android:hint="Medical History"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:entries="@array/history_types" />
+
+    <EditText
+        android:id="@+id/editDate"
+        android:hint="Date"
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editField1"
+        android:hint="Medicine/Symptoms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editField2"
+        android:hint="Dosage/Notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editNotes"
+        android:hint="Additional Notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:text="Save"
+        android:backgroundTint="@color/teal_700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnGeneratePdf"
+        android:text="Generate PDF"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/dark_spinnerBackground"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

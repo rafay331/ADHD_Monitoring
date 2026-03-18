@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background_image">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/childProfileImage"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_launcher_foreground" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="16dp">
+
+                    <TextView
+                        android:id="@+id/childName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Linked Child:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primaryText" />
+
+                    <TextView
+                        android:id="@+id/childStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status: Connected"
+                        android:textSize="14sp"
+                        android:textColor="@color/secondaryText" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnViewChildProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Child's Progress"
+            android:backgroundTint="@color/buttonStart"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/btnQuestionnaire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/switchThumb"
+            android:text="ADHD Assessment Test" />
+
+        <Button
+            android:id="@+id/btnMedicalHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/switchThumb"
+            android:text="Enter Medical History"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnMoodHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/switchThumb"
+            android:text="Mood History"
+            android:layout_marginTop="10dp"/>
+
+
+        <Button
+            android:id="@+id/btnViewTreatmentReports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/switchThumb"
+            android:text="View Treatment Reports"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnBudgetManagement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/switchThumb"
+            android:text="Budget Management"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnFocusMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Focus Mode   "
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/switchThumb"
+            android:textColor="@color/buttonText"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/btnTaskManagement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Management"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@android:color/white"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnReportProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:text="Progress report"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnSendChildRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Link to Child"
+            android:backgroundTint="@color/SoftBlue"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/SoftBlue"
+            android:text="Settings"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:backgroundTint="@color/buttonStop"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

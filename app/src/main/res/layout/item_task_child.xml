@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- Task title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Task Title"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <!-- Due date + priority -->
+        <TextView
+            android:id="@+id/tvMeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Due: 12 Nov • Priority: Medium"
+            android:textSize="13sp"
+            android:textColor="#666"
+            android:paddingTop="2dp" />
+
+        <!-- Progress -->
+        <ProgressBar
+            android:id="@+id/progressSteps"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="8dp"
+            android:max="100"
+            android:progress="0"
+            android:progressTint="@color/teal_700"
+            android:backgroundTint="#e0e0e0" />
+
+        <TextView
+            android:id="@+id/tvProgressLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 / 0 steps"
+            android:textSize="12sp"
+            android:textColor="#555"
+            android:paddingTop="4dp" />
+
+        <!-- Step list inside -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerSteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:nestedScrollingEnabled="false"
+            tools:listitem="@layout/item_step" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

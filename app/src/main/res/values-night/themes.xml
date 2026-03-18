@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for Night Mode. -->
+    <style name="Base.Theme.ADHD_Monitor" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/my_dark_primary</item>
+
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:statusBarColor">@color/purple_700</item>
+      
+    </style>
+    <color name="green">#4CAF50</color>
+
+    <style name="Theme.ADHD_Monitor" parent="Base.Theme.ADHD_Monitor" />
+</resources>

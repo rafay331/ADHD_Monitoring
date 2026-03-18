@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+        <!-- Header: Username + Points -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Anonymous#1234"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#111827"/>
+
+            <TextView
+                android:id="@+id/tvPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="120 pts"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="#16A34A"/>
+        </LinearLayout>
+
+        <!-- Budget rating stars row -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Budget Rating:"
+                android:textSize="12sp"
+                android:textColor="#6B7280"
+                android:layout_marginEnd="8dp"/>
+
+            <RatingBar
+                android:id="@+id/rbBudget"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1"
+                android:isIndicator="true"
+                android:rating="4"/>
+        </LinearLayout>
+
+        <!-- Encourage action + count -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvEncourage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Encourage (+2)"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="#2563EB"/>
+
+            <TextView
+                android:id="@+id/tvEncourageCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Encouragements: 0"
+                android:textSize="12sp"
+                android:textColor="#6B7280"/>
+        </LinearLayout>
+
+        <!-- Message -->
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Today I completed a 25-minute focus session without checking my phone!"
+            android:textSize="14sp"
+            android:textColor="#111827"
+            android:lineSpacingExtra="2dp"/>
+
+        <!-- Timestamp -->
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="10:41 PM"
+            android:textSize="11sp"
+            android:textColor="#9CA3AF"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

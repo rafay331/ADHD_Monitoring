@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+    <Button
+        android:id="@+id/btnQuestionnaire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/buttonStart"
+        android:textColor="@color/white"
+        android:text="ADHD Assessment Test" />
+
+    <Button
+        android:id="@+id/btnViewTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View My Tasks"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:paddingVertical="10dp" />
+
+    <Button
+        android:id="@+id/btnMoodJournal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mood Journal"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnCalmNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emotional Regulation"
+        android:layout_marginTop="10dp"/>
+
+
+    <Button
+        android:id="@+id/btnCommunitySupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Community Support"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:backgroundTint="#667EEA"
+        android:textColor="#FFFFFF"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:paddingVertical="10dp" />
+
+    <Button
+        android:id="@+id/btnBudgetManagement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/switchThumb"
+        android:text="Budget Management"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnMedicalHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/switchThumb"
+        android:text="Enter Medical History"
+        android:layout_marginTop="16dp"/>
+
+
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/SoftBlue"
+        android:text="Settings" />
+
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/buttonStop"
+        android:text="Logout"
+        android:textColor="@color/white" />
+</LinearLayout>

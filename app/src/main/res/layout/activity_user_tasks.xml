@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".UserTasksActivity">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvTasksHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Tasks"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvTasksSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tasks assigned to you by your parent"
+        android:textSize="14sp"
+        android:textColor="#666"
+        android:gravity="center"
+        android:paddingBottom="12dp" />
+
+    <!-- Task list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTasks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:nestedScrollingEnabled="true"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        tools:listitem="@layout/item_task_child" />
+
+    <!-- Empty state -->
+    <TextView
+        android:id="@+id/tvEmptyState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No tasks available 🎉"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="#888"
+        android:paddingTop="16dp"
+        android:visibility="gone" />
+
+</LinearLayout>

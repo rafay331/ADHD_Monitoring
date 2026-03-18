@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.adhd_monitor">
+
+    <!-- Permissions Required for Notifications -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ADHD_Monitor"
+        tools:targetApi="31">
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ADHD_Monitor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SignUpActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".HomeActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".PsychologistDashboardActivity" />
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".SettingsActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".ProfileActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".ParentDashboardActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".notificationManagement.PriorityAlertsActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".notificationManagement.ScheduledNotificationsActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".notificationManagement.SmartReminderActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".Questionnaire.QuestionnaireActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".Questionnaire.ResultActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".Questionnaire.PsychologistReportsActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".RecoverPasswordActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".ManageParentRequestsActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".SendLinkRequestToChildActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".MedicalHistory.MedicalHistoryInputActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".MedicalHistory.Psychologistview" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".TreatmentReport.TreatmentReportActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".TreatmentReport.ParentViewTreatmentReportsActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".UserTasksActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".TaskManagementActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".PatientBudgetActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".ParentBudgetActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".CommunityChatActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".MoodHistoryActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".MoodJournalActivity" android:theme="@style/Theme.ADHD_Monitor" />
+        <activity android:name=".CalmNowActivity" android:theme="@style/Theme.ADHD_Monitor" />
+
+        <activity android:name=".ReportProgressActivity" android:theme="@style/Theme.ADHD_Monitor" />
+
+        <activity
+            android:name=".BlockOverlayActivity"
+            android:theme="@style/Theme.ADHD_Monitor"
+            android:exported="false"
+            android:excludeFromRecents="true"/>
+
+        <activity
+            android:name=".FocusModeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!-- Register Notification Receiver (If using BroadcastReceiver) -->
+        <receiver android:name=".notificationManagement.NotificationReceiver"
+            android:exported="false" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+<!--        <provider-->
+<!--            android:name="androidx.core.content.FileProvider"-->
+<!--            android:authorities="${applicationId}.fileprovider"-->
+<!--            android:exported="false"-->
+<!--            android:grantUriPermissions="true">-->
+<!--            <meta-data-->
+<!--                android:name="androidx.core.content.FileProvider.paths"-->
+<!--                android:resource="@xml/provider_paths" />-->
+<!--        </provider>-->
+
+        <service
+            android:name=".YouTubeBlockerService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/youtube_blocker_config"/>
+        </service>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customize Your Preferences"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <Switch
+        android:id="@+id/switchNotifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enable Notifications"/>
+
+    <Switch
+        android:id="@+id/switchAlerts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enable Alerts"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Theme:"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/themeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification Type:"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerNotificationType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Preferences"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnScheduledNotifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scheduled Notifications"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnPriorityAlerts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Priority-Based Alerts"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnSmartReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Smart Reminder System"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnSecurity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Security"
+        android:layout_marginTop="10dp"/>
+
+  
+
+</LinearLayout>

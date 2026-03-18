@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">ADHD Monitor</string>
+
+    <string-array name="theme_options">
+        <item>System Default</item>
+        <item>Dark Mode</item>
+        <item>Light Mode</item>
+    </string-array>
+    <string-array name="nature_sounds">
+        <item>Birds</item>
+        <item>rain</item>
+        <item>river</item>
+
+    </string-array>
+
+
+    <string-array name="notification_types">
+        <item>Sound</item>
+        <item>Pop-Up</item>
+        <item>Silent</item>
+    </string-array>
+    <string-array name="notification_priority_options">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+
+    <string-array name="history_types">
+        <item>Medication History</item>
+        <item>Behavioral History</item>
+    </string-array>
+
+    <!-- (Optional) If you prefer a dedicated list for task priorities -->
+    <string-array name="task_priorities">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+
+    <!-- Reminder lead times shown in the spinner -->
+    <string-array name="reminder_lead_times">
+        <item>At time</item>
+        <item>5 minutes before</item>
+        <item>10 minutes before</item>
+        <item>30 minutes before</item>
+        <item>1 hour before</item>
+    </string-array>
+
+    <!-- Parallel numeric values (minutes) to map the selection to scheduling logic -->
+    <integer-array name="reminder_lead_minutes">
+        <item>0</item>    <!-- At time -->
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+    </integer-array>
+
+    <!-- Categories for filtering / grouping tasks -->
+    <string-array name="task_categories">
+        <item>All</item>
+        <item>Study</item>
+        <item>Work</item>
+        <item>Therapy</item>
+        <item>Medication</item>
+        <item>Daily Routine</item>
+        <item>Custom Goal</item>
+    </string-array>
+
+        <!-- …your existing strings… -->
+    <string name="focus_service_desc">Block YouTube during Focus Mode</string>
+
+
+
+    <string name="rewards">Rewards</string>
+
+</resources>
